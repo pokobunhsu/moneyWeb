@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>幸運數字</title>
+</head>
+
+
+
+<body class="text-center">
+    <main class="sheet">
+        <form>
+            <div class="alert" role="alert">
+                今天是<span id="day"></span>，<span id="msg"></span>
+            </div>
+            <h1>今天幸運數字</h1>
+            <h2>
+                <span id="luckyNum">
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    取得資料中...
+                </span>
+            </h2>
+            <hr>
+            <span id="time"></span><br><br>
+            <button type="button" class="btn btn-warning" id="refresh" style="display: none;">重新整理</button>
+        </form>
+
+    </main>
+    <div class="footer">
+        🤗Made with <a href="https://getbootstrap.com/" target="blank">Bootstrap 5</a> &
+        <a href="https://rate.bot.com.tw/xrt/history" target="blank">臺灣銀行</a>
+        <br>
+        poko V211025.001
+    </div>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f2f1f7;
+        }
+
+        .sheet {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+
+</html>
