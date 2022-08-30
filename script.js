@@ -17,7 +17,7 @@ if (day.getDay() == 5) {
 
 
 let getMoney = () => {
-    fetch("https://pokobun-api.herokuapp.com/api/getMoney").then((res) => {
+    fetch("https://pokoapi.azurewebsites.net/api/getMoney").then((res) => {
         return res.json()
     }).then((data) => {
         luckyNumShow.textContent = data.LuckyNum
